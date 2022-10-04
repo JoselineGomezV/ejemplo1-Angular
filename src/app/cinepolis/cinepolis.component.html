@@ -1,0 +1,61 @@
+<br>
+<div class="container">
+  <nav class="navbar navbar-dark bg-primary">
+    <span class="navbar-text">
+      CINECO
+    </span>
+  </nav>
+</div>
+<br>
+<br>
+<div class="container">
+<div class="row">
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Entradas</h5>
+        <br>
+        <p class="card-text">
+          Nombre: <input type="text" [(ngModel)]="nombre" name="nombre">
+        </p>
+        <p class="card-text">
+          Cantidad Comprador (Maximo 2): <input type="text" [(ngModel)]="comprador" name="comprador">
+        </p>
+        <p class="card-text">
+          Tarjeta Cinepolis: 
+          <input type="radio" value="1" name="tarjeta" [(ngModel)]="tarjeta">Si
+          <input type="radio" value="0" name="tarjeta" [(ngModel)]="tarjeta">No
+        </p>
+        <p class="card-text">
+          Cantidad de boletos: <input type="text" [(ngModel)]="boletos" name="boletos">
+        </p>
+        <button class="btn btn-primary" type="button" (click)="procesar()">Procesar</button>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col-sm-6">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">Salidas</h5>
+        <br>
+        <p class="card-tex">
+          Comprador: {{nombre}}
+          <br>
+          Cantidad de boletos: {{boletos}}
+          <br>
+          Total: {{total}}
+          <br>
+          {{error}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<br>
+<img src="https://caracoltv.brightspotcdn.com/dims4/default/6e6f608/2147483647/strip/true/crop/1280x672+0+24/resize/1200x630!/quality/90/?url=http%3A%2F%2Fcaracol-brightspot.s3.amazonaws.com%2Fc8%2F0e%2Fbb163c874ef49677d0bf49549c3a%2Fbobo-cineco.jpg" 
+class="rounded mx-auto d-block" alt="Responsive image" width="350px">
+<!--<img src="https://dn8uedl399hli.cloudfront.net/20200626214138/imagen-destaque-detalle.jpg" 
+class="rounded mx-auto d-block" alt="Responsive image">-->
+
